@@ -252,12 +252,13 @@ if (!$resultProductos) {
             }
 
             function openDeleteModal(id, name) {
-                $('#deleteProductName').text(name);
-                $('#confirmDeleteButton').off('click').on('click', function() {
-                    window.location.href = 'eliminarProductos.php?id=' + id; // Cambia a tu lógica de eliminación
-                });
-                $('#deleteProductModal').modal('show');
-            }
+    $('#deleteProductName').text(name);
+    $('#confirmDeleteButton').off('click').on('click', function() {
+        window.location.href = 'eliminarProductos.php?id=' + id;
+    });
+    $('#deleteProductModal').modal('show');
+}
+
 
             function validateForm() {
                 // Aquí puedes agregar validaciones si es necesario
